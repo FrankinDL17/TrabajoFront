@@ -1,0 +1,88 @@
+/* Contenedor del formulario con sombra y padding */
+.form-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilo para el campo de fecha */
+input[type="date"] {
+    position: relative;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    appearance: none; /* Elimina el estilo por defecto */
+}
+
+/* Placeholder personalizado para el input de fecha */
+input[type="date"]::-webkit-datetime-edit {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+/* Cambiar color de flecha del calendario en algunos navegadores */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: #007bff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Sombra y borde al enfocar */
+input[type="date"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Botón de validar */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    background-color: #004494;
+    transform: scale(1);
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .btn-primary, .form-control {
+        font-size: 14px;
+    }
+}
+
+/* Estilo para el icono de calendario */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(100%);
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20zm-1 14v-4H7v4h4zm2 0h4v-4h-4v4zm4-6h-4V6h4v4zM11 6v4H7V6h4z"/></svg>');
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Espaciado ajustado */
+.mb-2 {
+    margin-bottom: 15px;
+}
+
+.w-150 {
+    width: 150px;
+}

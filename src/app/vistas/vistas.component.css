@@ -1,0 +1,93 @@
+/* Fondo general con gradiente */
+.custom-container {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradiente azul y morado */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto;
+    max-width: 80%; /* Centrado y limitado */
+}
+
+/* Estilos para la tabla */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos de la cabecera */
+.custom-table thead tr {
+    background-color: #283593; /* Fondo azul oscuro */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Filas pares con fondo alternado */
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Filas impares */
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #e8f0fe;
+}
+
+/* Hover en las filas */
+.custom-table tbody tr:hover {
+    background-color: #c3e5f5; /* Color suave al hacer hover */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+
+/* Estilos para las celdas */
+.custom-table th, .custom-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo personalizado para las celdas del encabezado */
+.custom-table th {
+    text-align: center;
+    background: #283593;
+    color: #ffffff;
+}
+
+/* Primera columna (index) resaltada */
+.custom-table th[scope="row"] {
+    background-color: #5e35b1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Efecto de sombra para los títulos */
+.custom-table th, .custom-table td {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil para el texto */
+}
+
+/* Efecto de transición suave para todo */
+.custom-table th, .custom-table td {
+    transition: background-color 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+/* Estilo para móviles */
+@media (max-width: 768px) {
+    .custom-container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .custom-table th, .custom-table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

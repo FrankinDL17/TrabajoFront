@@ -1,0 +1,19 @@
+<div class="row w-100">
+    <div class="col col-12 col-md-6 mb-2 mb-md-0">
+        <div class="d-flex">
+            <input type="number" class="form-control me-2" min="1500" inputmode="numeric" #entradaAnno>
+            <button (click)="ObtenerFestivo()" class="btn btn-primary w-150" type="button">Listar</button>
+        </div>      
+    </div><br>
+    
+    <div class="col col-12 col-md-6">
+        <div class="d-flex">
+            <input type="date" class="form-control me-2" id="datepicker" #entradaValidacion>
+           <button (click)="ValidateHoliDay()" class="btn btn-primary w-150" type="button">Validar</button>
+        </div>
+    </div>
+</div>
+
+
+
+

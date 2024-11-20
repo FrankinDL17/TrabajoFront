@@ -1,0 +1,21 @@
+<div class="container-fluid custom-container">
+  <table class="table custom-table">
+      <thead>
+        <tr>
+          <th scope="col">N.Día</th>
+          <th scope="col">Dia Festivo</th>
+          <th scope="col">Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (Festivo of clienteServicio.festivosList; track $index) 
+        {
+          <tr>
+            <th scope="row">${{$index}}</th>
+            <td>{{Festivo.nombre}}</td>
+            <td>{{Festivo.dia}}-{{Festivo.mes}}-{{Festivo.anno}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+</div>
